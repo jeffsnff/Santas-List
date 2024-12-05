@@ -8,6 +8,8 @@ namespace SantasList{
       Would have street, street2, city, state, zipcide
     */
     // private string address;
+
+    // Can I make behavior an enum? 
     private string behavior;
     private string present;
     private Boolean status;
@@ -18,6 +20,9 @@ namespace SantasList{
       this.status = status;
     }
 
-    
+    public override string ToString()
+    {
+      return "Name: "+this.name+"\r\n"+"Naughty or Nice? "+this.behavior+"\r\n"+"Delivered Present? "+this.status;
+    }
   }
 }
