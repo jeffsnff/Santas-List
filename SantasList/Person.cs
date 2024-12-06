@@ -14,10 +14,10 @@ namespace SantasList{
     private string present;
     private Boolean deliveredStatus;
 
-    public Person(string name, string behavior, Boolean deliveredStatus){
+    public Person(string name, string behavior){
       this.name = name;
       this.behavior = behavior;
-      this.deliveredStatus = deliveredStatus;
+      this.deliveredStatus = false;
     }
     public override string ToString()
     {
