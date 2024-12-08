@@ -10,7 +10,7 @@ namespace SantasList{
     // private string address;
 
     // Can I make behavior an enum? 
-    private string behavior;
+    public string behavior;
     private string present;
     private Boolean deliveredStatus;
 
