@@ -70,7 +70,7 @@ namespace SantasList
       Console.WriteLine("");
       foreach (Person person in SantaList)
       {
-        Console.WriteLine(person+"\r\n");
+        Console.WriteLine(person + "\r\n");
       }
       Console.WriteLine("###################################################################################");
       Console.WriteLine("");
