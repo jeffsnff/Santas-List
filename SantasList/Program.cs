@@ -9,33 +9,35 @@ namespace SantasList
       List<Person> SantaList = new List<Person>();
       string command;
 
-
-      command = Greetings();
-
-      if (command.ToLower().Equals("add"))
+      while (true)
       {
-        AddPerson(SantaList);
+        command = Greetings();
+
+        if (command.ToLower().Equals("add"))
+        {
+          AddPerson(SantaList);
+        }
+
+        if (command.ToLower().Equals("print"))
+        {
+          PrintList(SantaList);
+        }
       }
-
-      PrintList(SantaList);
     }
-
     static string Greetings()
     {
       Console.WriteLine("Welcome to Santas List!");
       return Options();
     }
-
     static string Options()
     {
       Console.WriteLine("Enter one of the following:");
       Console.WriteLine("- 'Add' to add names to list");
       Console.WriteLine("- 'Update' to update a name in list");
-      Console.WriteLine("- 'View All' to view all names in list");
+      Console.WriteLine("- 'Print' to view all names in list");
       Console.Write("Command Entry : ");
       return Console.ReadLine();
     }
-
     static void AddPerson(List<Person> SantaList)
     {
       string name;
@@ -64,10 +66,15 @@ namespace SantasList
     }
     static void PrintList(List<Person> SantaList)
     {
+      Console.WriteLine("####################################Santas List####################################");
+      Console.WriteLine("");
       foreach (Person person in SantaList)
       {
-        Console.WriteLine(person);
+        Console.WriteLine(person+"\r\n");
       }
+      Console.WriteLine("###################################################################################");
+      Console.WriteLine("");
+      Console.WriteLine("");
     }
   }
 }
