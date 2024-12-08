@@ -23,6 +23,10 @@ namespace SantasList
           string printCommand = PrintOptions();
           PrintList(SantaList, printCommand);
         }
+
+        if (command.ToLower().Equals("update")){
+          UpdateDeliveredStatus(SantaList);
+        }
       }
     }
     static string Greetings()
@@ -96,6 +100,23 @@ namespace SantasList
     Console.WriteLine("- Nice : Prints all nice users in Santas List");
     Console.Write("Command Entry : ");
     return Console.ReadLine();
+  }
+  
+  static void UpdateDeliveredStatus(List<Person> SantaList){
+    string personToUpdate;
+    Boolean updateStatus;
+    Console.WriteLine("Who do you want to update?");
+    PrintList(SantaList, "all");
+    Console.Write("Person to update: ");
+    personToUpdate = Console.ReadLine().ToLower();
+    Console.Write("Present Delivered? true/false : ");
+    updateStatus = Convert.ToBoolean(Console.ReadLine());
+
+    foreach(Person person in SantaList){
+      if(person.name.ToLower().Equals(personToUpdate)){
+        Console.WriteLine(person.UpdateDeliveredStatus(updateStatus));
+      }
+    }
   }
   // Don't go below here
   }
