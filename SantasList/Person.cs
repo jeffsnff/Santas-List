@@ -2,7 +2,7 @@ using System;
 
 namespace SantasList{
   public class Person{
-    private string name;
+    public string name;
     /*
       Can I make address an Object as well?
       Would have street, street2, city, state, zipcide
@@ -27,8 +27,9 @@ namespace SantasList{
     public Boolean DeliveredStatus(){
       return this.deliveredStatus;
     }
-    public void UpdateDeliveredStatus(Boolean deliveredStatus){
+    public string UpdateDeliveredStatus(Boolean deliveredStatus){
       this.deliveredStatus = deliveredStatus;
+      return this.name+" delivered status has been updated.";
     }
     public string AddPresent(string present){
       this.present = present;
