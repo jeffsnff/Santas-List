@@ -20,4 +20,4 @@ During this project I will be doing simple branching and merging as well as prac
 
 ### Updates
 
-2024-12-09 I am going to put this project to bed for right now. I wanted to get more features added, but I was not able to finish it for various reasons. That is okay though because this was just a little challenege for me to do to take a break from expercises and do a little side project. It was good practice and I enjoyed it.
+2024-12-09 I am going to put this project to bed for right now. I wanted to get more features added, but I was not able to finish it for various reasons. That is okay though because this was just a little challenege for me to do to take a break from exercises and do a little side project. It was good practice and I enjoyed it.
